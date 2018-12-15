@@ -1,0 +1,16 @@
+
+#include <Servo.h>  /* Servo kutuphanesi projeye dahil edildi */
+Servo servoNesnesi;  /* servo motor nesnesi yaratildi */
+
+void setup()
+{
+  servoNesnesi.attach(9);  /* Servo motor 9 numarali pine baglandi */
+}
+ 
+void loop()
+{
+  servoNesnesi.write(180);  /* Motorun mili 180. dereceye donuyor en fazla 180 ve 0 derece arasında döner */
+  delay(1000);
+  servoNesnesi.write(o);   /* Motor mili 0. dereceye donuyor en fazla 180 ve 0 derece arasında döner*/
+  delay(1000);
+}
